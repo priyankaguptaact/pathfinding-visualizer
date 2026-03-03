@@ -3,7 +3,7 @@ export const MAX_COLS = 49;
 
 export const START_TILE_CONFIGURATION = {
     row: 1,
-    col: 1,
+    column: 1,
     isEnd: false,
     isWall: false,
     isPath: false,
@@ -15,7 +15,7 @@ export const START_TILE_CONFIGURATION = {
 
 export const END_TILE_CONFIGURATION = {
     row: MAX_ROWS - 2,
-    col: MAX_COLS - 2,
+    column: MAX_COLS - 2,
     isEnd: false,
     isWall: false,
     isPath: false,
@@ -23,4 +23,12 @@ export const END_TILE_CONFIGURATION = {
     isStart: false,
     isTraversal: false,
     parent: null
-}
+};
+
+export const TILE_STYLE = 
+    "lg:w-[17px] md:w-[15px] xs:w-[8px] w-[7px] lg:h-[17px] md:h-[-15px] xs:h-[8px] h-[7px] border-t border-r border-sky-200";
+export const TRAVERSED_TILE_STYLE = TILE_STYLE + "bg-cyan-400";
+export const START_TILE_STYLE = TILE_STYLE + "bg-green-400";
+export const END_TILE_STYLE = TILE_STYLE + "bg-red-400";
+export const WALL_TILE_STYLE = TILE_STYLE + "bg-gray-400";
+export const PATH_TILE_STYLE = TILE_STYLE + "bg-green-400";    

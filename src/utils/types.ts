@@ -21,3 +21,4 @@ type TileType = {
 type GridType = TileType[][];
 
 export type {GridType, TileType, MazeType, AlgorithmType};
+export type SpeedType = 2 | 1 | 0.5;
